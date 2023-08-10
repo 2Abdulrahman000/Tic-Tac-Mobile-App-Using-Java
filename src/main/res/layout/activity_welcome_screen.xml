@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".WelcomeScreen">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:background="#FFFFFF"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/tictac"
+        ></com.airbnb.lottie.LottieAnimationView>
+    <TextView
+        android:id="@+id/tv_myname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Abdo ElQabany"
+        android:textColor="#755C5C"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        ></TextView>
+    <TextView
+        android:id="@+id/tv_sharifname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Sharif Abdul Munim "
+        android:textColor="#755C5C"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        ></TextView>
+</LinearLayout>

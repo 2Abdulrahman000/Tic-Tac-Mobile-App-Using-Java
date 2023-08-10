@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddPlayers">
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="44dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Enter Player Names"
+        android:textColor="#121212"
+        android:textSize="28sp"
+        android:textStyle="bold"></TextView>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/secound_xo"
+        tools:srcCompat="@drawable/secound_xo"></ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="47dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="44dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/secound_x" />
+
+        <EditText
+            android:id="@+id/et_player1"
+            android:layout_width="260dp"
+            android:layout_height="39dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Player One"
+            android:textColorHint="#9F9898"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/et_style"
+            android:maxLines="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="41dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="44dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/secound_o" />
+
+        <EditText
+            android:id="@+id/et_player2"
+            android:layout_width="260dp"
+            android:layout_height="39dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Player Two"
+            android:textColorHint="#9F9898"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:background="@drawable/et_style"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="61dp"
+        android:padding="7dp"
+        android:background="@drawable/btn_start"
+        android:text="Start Game"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#E41000"></Button>
+</LinearLayout>
